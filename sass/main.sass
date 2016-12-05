@@ -1,0 +1,186 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.header
+.top-line
+	background-color: #6ddad6
+	height: 28px
+	&__authentication
+		padding-left: 28px
+.authentication
+	display: inline-block
+	&:last-child
+		&::before
+			content: '|'
+			color: #e6e7e9
+		.authentication__link
+			margin-left: 8px
+			margin-right: 0
+			&-icon
+				background-position: right top
+	&__link
+		color: #000
+		font-size: em(15px)
+		letter-spacing: -0.5px
+		line-height: 28px
+		display: inline-block
+		position: relative
+		padding-left: 30px
+		margin-right: 8px
+		&-icon
+			position: absolute
+			background-image: url(../img/user.png)
+			background-repeat: no-repeat
+			background-position: left top
+			display: block
+			width: 20px
+			height: 20px
+			left: 0
+			top: 50%
+			margin-top: -10px
+.center-line
+	min-height: 98px
+	background-color: #fff
+	&__logo
+		padding-left: 54px
+		padding-top: 17px
+		padding-bottom: 17px
+	&__center
+		padding: 0 88px
+	&__phone
+		padding-top: 14px
+	&__search
+		padding-top: 4px
+	&__basket
+		@extend .clearfix
+		padding-right: 62px
+		padding-top: 23px
+.logo
+	&__link
+		display: inline-block
+	&__img
+		width: 148px
+		height: 64px
+		display: block
+.phone
+	@extend .clearfix
+	&__number
+		font-family: "ProximaNovaSemibold", sans-serif
+		font-size: em(20px)
+		transform: scale(1,1.25)
+		-webkit-transform: scale(1,1.25)
+		-ms-transform: scale(1,1.25)
+		padding-left: 31px
+		background-image: url(../img/phone.png)
+		background-repeat: no-repeat
+		background-position: left center
+		display: block
+		float: left
+		width: 50%
+		span
+			font-size: 0.75em
+			color: #636363
+			margin-right: 4px
+	&__text
+		display: block
+		float: right
+		width: 50%
+		text-align: right
+		font-size: em(15px)
+		transform: scale(1,1.25)
+		-webkit-transform: scale(1,1.25)
+		-ms-transform: scale(1,1.25)
+		color: #353535
+		line-height: 1.6
+.search
+	-webkit-box-shadow: 0px 3px 4px 0px rgba(149,148,148,0.52)
+	-moz-box-shadow: 0px 3px 4px 0px rgba(149,148,148,0.52)
+	box-shadow: 0px 3px 4px 0px rgba(149,148,148,0.52)
+	@extend .clearfix
+	&__input
+		border: 1px solid #e4e4e4
+		display: block
+		width: 342px
+		height: 35px
+		padding-left: 12px
+		padding-right: 12px
+		float: left
+	&__button
+		display: block
+		float: left
+		width: 37px
+		height: 35px
+		border: none
+		background-color: #e6e7e9
+		position: relative
+		&::after
+			content: ''
+			background-image: url(../img/search.png)
+			position: absolute
+			top: 50%
+			margin-top: -9.5px
+			left: 50%
+			margin-left: -9.5px
+			width: 19px
+			height: 19px
+.basket
+	width: 56px
+	height: 56px
+	background-color: #f05154
+	display: block
+	border-radius: 50%
+	background-image: url(../img/basket.png)
+	background-repeat: no-repeat
+	background-position: center center
+	-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+	-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+	position: relative
+	float: right
+	&__quantity
+		position: absolute
+		bottom: -5px
+		right: -5px
+		width: 20px
+		height: 20px
+		background-color: #6ddad6
+		border-radius: 50%
+		text-align: center
+		font-size: em(10px)
+		line-height: 20px
+		font-family: "OpenSansSemiBold", sans-serif
+		-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		color: #000
+.bottom-line
+	background-color: #f1f1f1
+	border: 1px solid #dbd8d8
+	&__nav
+		display: block
+		text-align: center
+.nav
+	height: 53px
+	&__item
+		margin: 0 12px
+		padding: 0 7px
+		line-height: 50px
+		font-size: em(15px)
+		color: #000
+		text-shadow: 1px 0 0 #c0c0c0
+		display: inline-block
+		&:hover
+			border-bottom: 4px solid #6ddad6
+			text-decoration: none
