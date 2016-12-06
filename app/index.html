@@ -15,6 +15,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -54,7 +55,14 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-3 col-lg-push-6">
+						<div class="center-line__basket">
+							<a href="#" class="basket">
+								<span class="basket__quantity">1</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-lg-pull-3">
 						<div class="center-line__center">
 							<div class="center-line__phone">
 								<div class="phone">
@@ -74,39 +82,358 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3">
-						<div class="center-line__basket">
-							<a href="#" class="basket">
-								<span class="basket__quantity">1</span>
-							</a>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 		<div class="bottom-line">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-lg-12">
 						<div class="bottom-line__nav">
-							<nav class="nav">
-								<a href="#" class="nav__item">Кольца</a>
-								<a href="#" class="nav__item">Серьги</a>
-								<a href="#" class="nav__item">Кулоны</a>
-								<a href="#" class="nav__item">Цепочки</a>
-								<a href="#" class="nav__item">Браслеты</a>
-								<a href="#" class="nav__item">Коллекции</a>
-								<a href="#" class="nav__item">Акции</a>
-								<a href="#" class="nav__item">Брилианты</a>
-							</nav>
+							<ul class="nav">
+								<li class="nav__item">
+									<a href="#" class="nav__link nav__rings">Кольца</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link nav__earrings">Серьги</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Кулоны</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Цепочки</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Браслеты</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Коллекции</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Акции</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Брилианты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup rings">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="popup__diamond">
+								<div class="diamond">
+									<div class="diamond__icon"></div>
+									<span class="diamond__text">
+										С бриллиантами
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="popup__content">
+								<h2 class="popup__content-title">
+									Кольца
+								</h2>
+								<ul class="menu">
+									<li class="menu__item menu__categories">
+										<a href="#" class="menu__link">Категории</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Классические
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Помолвочные
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Обручальные
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item menu__metal">
+										<a href="#" class="menu__link">Металл</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Из белого золота
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Из красного золота
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Из желтого золота
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item menu__insert">
+										<a href="#" class="menu__link">Вставки</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с фианитами
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с изумрудами
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с сапфирами
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с жемчугом
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца без вставок
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с цветными камнями
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item menu__price">
+										<a href="#" class="menu__link">Цена</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Дорогие
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Средняя цена
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Недорогие
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup earrings">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="popup__diamond">
+								<div class="diamond">
+									<div class="diamond__icon"></div>
+									<span class="diamond__text">
+										С бриллиантами
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="popup__content">
+								<h2 class="popup__content-title">
+									Серьги
+								</h2>
+								<ul class="menu">
+									<li class="menu__item menu__categories">
+										<a href="#" class="menu__link">Категории</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Классические
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Помолвочные
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Обручальные
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item menu__metal">
+										<a href="#" class="menu__link">Металл</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Из белого золота
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Из красного золота
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Из желтого золота
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item menu__insert">
+										<a href="#" class="menu__link">Вставки</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с фианитами
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с изумрудами
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с сапфирами
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с жемчугом
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца без вставок
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Кольца с цветными камнями
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item menu__price">
+										<a href="#" class="menu__link">Цена</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Дорогие
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Средняя цена
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Недорогие
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<section class="slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="slider__block">
+						<div class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" alt="">
+							<div class="slider__text">
+								<h2 class="slider__title">Бабочки</h2>
+								<span class="slider__discount">10%</span>
+							</div>
+						</div>
+						<div class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" alt="">
+							<div class="slider__text">
+								<h2 class="slider__title">Бабочки</h2>
+								<span class="slider__discount">10%</span>
+							</div>
+						</div>
+						<div class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" alt="">
+							<div class="slider__text">
+								<h2 class="slider__title">Бабочки</h2>
+								<span class="slider__discount">10%</span>
+							</div>
+						</div>
+						<div class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" alt="">
+							<div class="slider__text">
+								<h2 class="slider__title">Бабочки</h2>
+								<span class="slider__discount">10%</span>
+							</div>
+						</div>
+						<div class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" alt="">
+							<div class="slider__text">
+								<h2 class="slider__title">Бабочки</h2>
+								<span class="slider__discount">10%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="looking">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="looking__wrapper">
+						<h2 class="looking__title">Я ищу:</h2>
+						<div class="looking__ornament">
+							<a href="#" class="looking__link">
+								Вид украшения
+							</a>
+							<ul>
+								<li>Кольца</li>
+								<li>Серьги</li>
+								<li>Подвески</li>
+								<li>Браслеты</li>
+								<li>Колье</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>
