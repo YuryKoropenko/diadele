@@ -323,14 +323,56 @@ body
 		display: block
 		float: left
 .looking
-	&__ornament
-	&__link
-		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
-		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
-		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
+	background-color: #abeae8
+	padding: 32px 0
+	&__wrapper
+		@extend .clearfix
+	&__title
 		display: block
+		float: left
+		color: #fff
+		font-size: 26px
+		font-family: "OpenSansSemiBold", sans-serif
+		margin-right: 32px
+		line-height: 40px
+	&__ornament
+		display: block
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		background: #fff
+		float: left
+		margin-right: 32px
+		position: relative
+	&__opened
+		display: none
+		position: absolute
+		top: 40px
+		left: 0
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		&-item
+			width: 230px
+			height: 40px
+		&-link
+			background-color: #fff
+			line-height: 40px
+			padding-left: 66px
+			font-size: em(15px)
+			color: #636363
+			background-position: 23px center
+			background-repeat: no-repeat
+			display: block
+			&:hover
+				background-color: #f2f2f2
+				border-left: 4px solid #8c8c8c
+				padding-left: 62px
+				background-position: 19px center
+				color: #636363
+	&__link
 		background-color: #f2f2f2
-		border: none
+		display: block
 		width: 230px
 		height: 40px
 		line-height: 40px
@@ -347,3 +389,25 @@ body
 			font-family: FontAwesome
 			right: 14px
 			font-size: 16px
+		&:hover
+			color: #636363
+		&-active
+			&::after
+				content: "\f0d8" !important
+	&__button
+		background-color: #f05154
+		display: block
+		float: left
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		&-submit
+			font-family: "OpenSansSemiBold", sans-serif
+			font-size: em(17px)
+			letter-spacing: 0.1px
+			color: #fff
+			padding: 0 50px
+			line-height: 40px
+			height: 40px
+			&:hover
+				color: #fff

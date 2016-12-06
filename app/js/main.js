@@ -14,4 +14,11 @@ $(document).ready(function() {
 		$(".earrings").stop(false, true).fadeToggle(300);
 		return false
 	});
+	/*_____section____*/
+	$(".looking__link").on("click", function slide() {
+		$(this).addClass("looking__link-active");
+		$(this).parent().children(".looking__opened").stop(false, true).slideToggle(300);
+		return false
+	});
+
 });
