@@ -451,8 +451,12 @@ body {
 .slider__text {
   display: block;
   position: absolute;
-  right: 86px;
-  top: 68px;
+  background-color: #fff;
+  height: 350px;
+  right: 0;
+  top: 0;
+  padding-top: 68px;
+  padding-right: 86px;
   width: 300px;
   text-align: left;
   padding-left: 64px;
@@ -642,7 +646,7 @@ body {
   margin-left: 2.08333%;
   width: 31.25%;
   float: left;
-  height: 406px;
+  min-height: 200px;
   background-color: #ccc;
 }
 
@@ -667,6 +671,7 @@ body {
   padding: 20px 0;
   float: left;
   border-left: none;
+  height: 320px;
 }
 
 .popular__item-first {

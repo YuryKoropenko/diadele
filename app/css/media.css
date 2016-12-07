@@ -39,6 +39,9 @@
     width: 100% !important;
     padding-left: 20%;
   }
+  .footer {
+    padding-bottom: 10px;
+  }
   .footer__extra-info {
     width: 100%;
   }
@@ -46,32 +49,133 @@
     width: 100% !important;
     padding-left: 50px;
   }
-  .pay-icon__item {
-    margin-left: 37px;
-    margin-right: 37px;
-  }
-  .logistic__item {
-    margin-right: 37px;
-    margin-left: 37px;
+  .pay-icon__item-first {
+    margin-left: 97px;
   }
   .logistic__item-first {
-    margin-right: 108px;
+    margin-left: 103px;
+  }
+  .contact {
+    padding-top: 21px;
+    padding-left: 46px;
   }
   /**/
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .center-line {
+    padding-bottom: 20px;
+  }
+  .information__item-last {
+    margin-top: 10px !important;
+  }
+  .additionally {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .footer__contact {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .contact {
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .contact__title {
+    text-align: center;
+  }
+  .pay-icon {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .pay-icon__item-first {
+    margin-left: 61px;
+  }
+  .logistic {
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .logistic__item-first {
+    margin-left: 6px;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    z-index: 999;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dbd8d8;
+  }
+  .nav__item {
+    display: block;
+    text-align: center;
+  }
+  .nav__link {
+    border-bottom: 4px solid transparent;
+  }
+  .nav__toggle {
+    display: block !important;
+    border-bottom: 4px solid transparent;
+  }
+  .bottom-line__nav {
+    position: relative;
+  }
   /**/
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .slider {
+    display: none;
+  }
+  .popular__item {
+    width: 50%;
+    margin: 10px 25%;
+    height: auto;
+    border: 2px solid #b6ecea !important;
+  }
   /**/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .banners__item, .block__item {
+    width: 96%;
+    padding: 0 2%;
+    margin-top: 20px;
+  }
+  .popular__item {
+    width: 96%;
+    margin: 10px 2%;
+  }
+  .center-line__search {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .center-line__phone {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .center-line__center {
+    width: 100%;
+  }
+  .center-line__basket {
+    padding-right: 20px;
+  }
+  .logo {
+    padding-left: 0;
+  }
   /**/
 }
 

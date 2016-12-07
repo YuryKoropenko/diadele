@@ -43,4 +43,9 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop:0}, 'slow');
 		return false;
 	});
+
+	$(".nav__toggle").on("click", function() {
+		$(this).parent().children(".nav").stop(false, true).slideToggle(300);
+		return false
+	});
 });
