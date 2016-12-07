@@ -171,6 +171,7 @@ body
 .bottom-line
 	background-color: #f1f1f1
 	border: 1px solid #dbd8d8
+	position: relative
 	&__nav
 		display: block
 		text-align: center
@@ -195,6 +196,11 @@ body
 	background-color: #fff
 	border-top: 1px solid #dbd8d8
 	display: none
+	position: absolute
+	top: 53px
+	left: 0
+	right: 0
+	z-index: 999
 	&__diamond
 		height: 350px
 		position: relative
@@ -323,12 +329,12 @@ body
 		display: block
 		float: left
 .looking
-	background-color: #abeae8
-	padding: 32px 0
 	&__wrapper
 		@extend .clearfix
-		padding-left: 40px
+		background-color: #abeae8
+		padding: 32px 0
 	&__title
+		padding-left: 40px
 		display: block
 		float: left
 		color: #fff
@@ -338,10 +344,6 @@ body
 		line-height: 40px
 	&__ornament
 		display: block
-		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
-		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
-		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
-		background: #fff
 		float: left
 		margin-right: 32px
 		position: relative
@@ -360,17 +362,16 @@ body
 		&-link
 			background-color: #fff
 			line-height: 40px
-			padding-left: 66px
+			padding-left: 62px
 			font-size: em(15px)
 			color: #636363
-			background-position: 23px center
+			background-position: 19px center
 			background-repeat: no-repeat
 			display: block
+			border-left: 4px solid transparent
 			&:hover
 				background-color: #f2f2f2
 				border-left: 4px solid #8c8c8c
-				padding-left: 62px
-				background-position: 19px center
 				color: #636363
 	&__link
 		background-color: #f2f2f2
@@ -385,6 +386,10 @@ body
 		color: #636363
 		font-size: em(15px)
 		position: relative
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+		background-color: #fff
 		&::after
 			content: "\f0d7"
 			position: absolute
@@ -397,30 +402,31 @@ body
 			&::after
 				content: "\f0d8" !important
 	&__button
-		background-color: #f05154
-		display: block
 		float: left
-		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
-		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
-		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
 		&-submit
 			font-family: "OpenSansSemiBold", sans-serif
 			font-size: em(17px)
 			letter-spacing: 0.1px
+			background-color: #f05154
+			-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+			-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
+			box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
 			color: #fff
-			padding: 0 50px
 			line-height: 40px
 			height: 40px
+			width: 190px
+			text-align: center
+			display: block
 			&:hover
 				color: #fff
 .block
 	padding-top: 45px
 	&__wrapper
 		@extend .clearfix
-		margin-left: -38px
+		margin-left: -(25 * 100 / 1200) + %
 	&__item
-		margin-left: 38px
-		width: 375px
+		margin-left: 25 * 100 / 1200 + %
+		+percent(375, 1200)
 		float: left
 		height: 406px
 		background-color: #ccc
@@ -444,6 +450,9 @@ body
 		border-left: none
 		&-first
 			border-left: 2px solid #b6ecea
+	&__img
+		width: 100%
+		height: auto
 	&__price
 		color: #f05154
 		font-family: "OpenSansSemiBold", sans-serif
@@ -462,14 +471,15 @@ body
 		margin-left: -35px
 		@extend .clearfix
 		padding-top: 45px
+		margin-left: -(25 * 100 / 1200) + %
 	&__item
-		width: 377px
-		margin-left: 35px
+		margin-left: 25 * 100 / 1200 + %
+		+percent(375, 1200)
 		float: left
 	&__img
 		display: block
-		width: 377px
-		height: 430px
+		width: 100%
+		height: auto
 .information
 	padding-top: 44px
 	&__item
@@ -514,11 +524,21 @@ body
 			letter-spacing: 0.25px
 			color: #636363
 .footer
-	height: 300px
+	min-height: 300px
 	margin-top: 30px
 	background-color: #f1f1f1
+	position: relative
 	&__item
 		@extend .clearfix
+	&__extra-info
+		width: 222px
+		float: left
+	&__contact
+		width: 265px
+		float: right
+	&__additionally
+		@extend .clearfix
+		width: 100%
 .additionally
 	padding-top: 52px
 	display: block
@@ -537,3 +557,113 @@ body
 		&:hover
 			text-decoration: underline
 			color: #333
+.social
+	padding-top: 42px
+	&__item
+		width: 55px
+		height: 55px
+		display: inline-block
+		background-image: url(../img/social.png)
+		background-repeat: no-repeat
+		margin-top: 25px
+		-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		border-radius: 50%
+		background-color: #f05154
+		margin-left: 24px
+.pay-icon, .logistic
+	padding-top: 46px
+	&__title
+		font-family: "OpenSansSemiBold", sans-serif
+		font-size: em(15px)
+		line-height: 1.25
+		color: #333
+		text-align: center
+	&__item
+		margin: 8px 10px
+		display: inline-block
+		vertical-align: middle
+	&__img
+		display: inline-block
+		overflow: hidden
+.logistic
+	padding-top: 57px
+	&__item
+		&-first
+			margin-left: 18px
+.contact
+	padding-left: 40px
+	padding-top: 46px
+	&__title
+		font-family: "OpenSansSemiBold", sans-serif
+		font-size: em(15px)
+		line-height: 1.25
+		color: #333
+		text-align: left
+	&__wrapper
+		padding-top: 16px
+	&__icon
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+	&__icon-phone
+		background-image: url(../img/contact.png)
+		background-position: 0 0
+		display: inline-block
+		width: 17px
+		height: 17px
+		margin-right: 16px
+	&__icon-envelope
+		background-image: url(../img/contact.png)
+		background-position: 0 -20px
+		display: inline-block
+		width: 18px
+		height: 14px
+		margin-right: 16px
+	&__icon-telegram
+		background-image: url(../img/contact.png)
+		background-position: 0 -39px
+		display: inline-block
+		width: 20px
+		height: 18px
+		margin-right: 16px
+	&__icon-viber
+		background-image: url(../img/contact.png)
+		background-position: 0 -63px
+		display: inline-block
+		width: 21px
+		height: 21px
+		margin-right: 16px
+	&__item
+		padding: 4px 0
+		position: relative
+		padding-left: 36px
+	&__item-phone, &__item-viber
+		font-family: "OpenSansBold", sans-serif
+		font-size: em(18px)
+		line-height: 1.25
+		color: #000
+	&__item-envelope, &__item-telegram
+		font-family: "OpenSansSemiBold", sans-serif
+		font-size: em(15px)
+		line-height: 1.25
+		color: #000
+	&__item-telegram
+		margin-top: 32px
+.arrow
+	&__button
+		background-image: url(../img/arrow-footer.png)
+		background-repeat: no-repeat
+		background-position: center
+		width: 54px
+		height: 54px
+		border-radius: 50%
+		background-color: #f05154
+		position: absolute
+		left: 23px
+		bottom: 25px
+		-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)

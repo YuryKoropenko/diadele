@@ -1,6 +1,62 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+  .looking__title {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .looking__ornament {
+    width: 100%;
+    padding-bottom: 16px;
+    margin: 0;
+  }
+  .looking__opened {
+    left: 50%;
+    margin-left: -115px;
+  }
+  .looking__link {
+    margin: 0 auto;
+  }
+  .looking__button {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  .looking__button-submit {
+    margin: 0 auto;
+  }
+  .social {
+    text-align: center;
+  }
+  .social__item {
+    margin: 0;
+  }
+  .additionally {
+    display: block;
+    width: 100% !important;
+    padding-left: 20%;
+  }
+  .footer__extra-info {
+    width: 100%;
+  }
+  .footer__contact {
+    width: 100% !important;
+    padding-left: 50px;
+  }
+  .pay-icon__item {
+    margin-left: 37px;
+    margin-right: 37px;
+  }
+  .logistic__item {
+    margin-right: 37px;
+    margin-left: 37px;
+  }
+  .logistic__item-first {
+    margin-right: 108px;
+  }
   /**/
 }
 
