@@ -452,9 +452,9 @@ body
 		padding: 20px 0
 		float: left
 		border-left: none
-		height: 320px
 		&-first
 			border-left: 2px solid #b6ecea
+			padding-bottom: 21.5px
 	&__img
 		width: 100%
 		height: auto
@@ -672,3 +672,354 @@ body
 		-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
 		-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
 		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
+
+/*________modal-window________*/
+
+.modal-window
+	width: 70%
+	margin: 0 15%
+	background-color: #fff
+	position: fixed
+	left: 0
+	top: 0
+	@extend .clearfix
+	&__wrapper
+		background-color: #000
+		height: 100%
+		opacity: 0.75px
+		position: fixed
+		width: 100%
+		z-index: 100
+		top: 0
+		left: 0
+	&__title
+		color: #000
+		display: block
+		+percent(864, 1158)
+		float: left
+		padding-left: 127 * 100 / 1158 + %
+		position: relative
+		line-height: 39px
+		font-size: em(36px)
+		letter-spacing: -0.25px
+		&::before
+			content: ''
+			width: 39px
+			height: 37px
+			display: block
+			background-image: url(../img/red-sprite.png)
+			background-position: -2px 42px
+			left: 0
+			top: 50%
+			margin-top: -18.5px
+			position: absolute
+	&__art
+		color: #000
+		display: block
+		+percent(294, 1158)
+		float: right
+		font-size: em(30px)
+		letter-spacing: -0.25px
+		line-height: 39px
+	&__prod-slider
+		+percent(752, 1158)
+		float: left
+		padding-top: 16px
+	&__p-description
+		+percent(406, 1158)
+		float: right
+		padding-top: 16px
+.p-description
+	&__characteristics
+		width: 100%
+	&-price
+		color: #f05154
+		font-size: em(48px)
+		line-height: 1.25
+	&-dimensions
+		@extend .clearfix
+		padding-top: 16px
+		&-left
+			+percent(196, 350)
+			float: left
+			display: block
+			line-height: 1.25
+			color: #555
+			font-size: em(15px)
+			font-family: "OpenSansSemiBold", sans-serif
+		&-right
+			+percent(154, 350)
+			float: right
+			display: block
+			line-height: 1.25
+			color: #555
+			font-size: em(15px)
+			font-family: "OpenSansSemiBold", sans-serif
+.dimensions
+	border-bottom: 1px solid #48d1cc
+	border-right: 1px solid #48d1cc
+	border-top: 2px solid #48d1cc
+	border-left: 2px solid #48d1cc
+	width: 100%
+	text-align: center
+	margin-top: 6px
+	&__row
+		@extend .clearfix
+		display: block
+		width: 100%
+	&__item
+		border: 1px solid #48d1cc
+		border-top: none
+		border-left: none
+		display: block
+		width: 100 / 7 + %
+		float: left
+		font-size: em(20px)
+		color: #000
+		line-height: 55px
+		&-last
+			width: 50%
+			border-right: 2px solid #48d1cc
+			border-top: 1px solid #48d1cc
+			&:last-child
+				border-right: 1px solid #48d1cc
+	&__link
+		color: #555
+		font-family: "OpenSansSemiBold", sans-serif
+		letter-spacing: 0.75px
+		line-height: 38px
+		display: block
+		font-size: 15px
+		&:hover
+			text-decoration: underline
+			color: #555
+.buttons
+	width: 100%
+	padding-top: 30px
+	@extend .clearfix
+	&__button
+		width: 45%
+		display: block
+		float: left
+		background-color: #f05154
+		font-size: em(17px)
+		padding: 10px 0
+		text-align: center
+		border-radius: 19px
+		color: #fff
+		&:last-child
+			margin-left: 10%
+			background-color: #48d1cc
+		&:hover
+			color: #fff
+.characteristics
+	&__main
+		@extend .clearfix
+		margin-left: -(20 * 100 / 350) + %
+		padding-top: 28px
+		&-item
+			+percent(96, 350)
+			margin-left: 20 * 100 / 350 + %
+			float: left
+		&-icon
+			display: block
+			&-first
+				width: 67px
+				height: 67px
+				border-radius: 50%
+				background-color: #e6e7eb
+				border: 2px solid #555
+				margin: 0 auto 7px
+			&-second
+				width: 78px
+				height: 74px
+				background-image: url(../img/585.png)
+				background-position: center
+				margin: 0 auto
+			&-third
+				width: 58px
+				height: 73px
+				background-image: url(../img/weight.png)
+				background-position: center
+				margin: 0 auto 1px
+				padding-top: 30px
+				text-align: center
+				color: #5d5d5d
+				font-family: "OpenSansSemiBold", sans-serif
+				font-size: em(22px)
+		&-text
+			color: #555
+			text-align: center
+			font-size: em(20px)
+			line-height: 1.25em
+			font-family: "OpenSansSemiBold", sans-serif
+	&__assay-value
+		text-align: center
+		margin-top: 22px
+		&-top
+			width: 100%
+			background-color: #e6e7eb
+			@extend .clearfix
+			border-radius: 20px
+			text-align: left
+		&-link
+			width: 50%
+			display: block
+			float: left
+			padding: 10px 0 10px 36px
+			font-family: "OpenSansSemiBold", sans-serif
+			font-size: em(20px)
+			color: #616161
+			line-height: 1.25
+			&:hover
+				color: #616161
+				text-decoration: underline
+			&-bottom
+				font-family: "ProximaNovaSemibold", sans-serif
+				font-size: em(20px)
+				color: #616161
+				line-height: 1.25
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+					color: #616161
+.prod-slider
+	@extend .clearfix
+	&__v-slider
+		+percent(100, 752)
+		float: left
+	&__f-slider
+		+percent(652, 752)
+		float: left
+		padding: 55px 0
+.v-slider
+	padding: 45px 0
+	width: 96%
+	padding: 0 4%
+	position: relative
+	height: 100px
+	&__item
+		display: block
+		
+		border: 1px solid #c1bfbf
+		margin-bottom: 23px
+		img
+			width: 100%
+			height: auto
+			display: block
+	.slick-current
+		border: 2px solid #51d3ce
+	.slick-next
+		display: block
+		z-index: 999
+	.slick-arrow
+		display: block !important
+		width: 32px
+		height: 18px
+	.slick-prev, .slick-next
+		position: absolute
+		top: 0
+		left: 40%
+		&::before
+			content: ''
+			background-image: url(../img/vsa.png)
+			background-position: top center
+			opacity: 0.5
+			display: block !important
+			z-index: 999
+			font-size: 70px !important
+			width: 32px
+			height: 18px
+			color: #333
+			font-size: 99px
+			position: absolute
+			top: 0
+			left: 0
+		&:hover
+			&::before
+				opacity: 1
+	.slick-next
+		top: 100%
+		&::before
+			background-position: bottom center
+.f-slider
+	width: 386 * 100 / 752 + % !important
+	margin: 0 auto
+	position: relative
+	&__item
+		img
+			width: 100%
+			height: auto
+			display: block
+	.slick-arrow
+		display: block !important
+		width: 30px
+		height: 57px
+	.slick-prev, .slick-next
+		position: absolute
+		top: 50%
+		left: -30%
+		&::before
+			content: ''
+			background-image: url(../img/fsa.png)
+			background-position: left 1px
+			opacity: 0.5
+			width: 30px
+			display: block !important
+			z-index: 999
+			font-size: 70px !important
+			height: 57px
+			color: #333
+			font-size: 99px
+			position: absolute
+			top: 0
+			left: 0
+		&:hover
+			&::before
+				opacity: 1
+	.slick-next
+		left: 120%
+		&::before
+			background-position: right top
+.bottom-p
+	width: 100%
+	@extend .clearfix
+	clear: left
+	margin-left: -(50 * 100 / 632) + %
+	&__item
+		+percent(108, 632)
+		float: left
+		margin-left: 50 * 100 / 632 + %
+	&__icon
+		height: 47px
+		width: 40px
+		background-image: url(../img/red-sprite.png)
+		display: block
+		margin: 0 auto
+		background-repeat: no-repeat
+		&-1
+			width: 68px
+			height: 43px
+			background-position: 0 0
+			margin-bottom: 12px
+		&-2
+			width: 42px
+			height: 47px
+			background-position: 0 -47px
+			margin-bottom: 8px
+		&-3
+			width: 38px
+			height: 45px
+			background-position: 0 -99px
+			margin-bottom: 12px
+		&-4
+			width: 40px
+			height: 47px
+			background-position: -1px -151px
+			margin-bottom: 10px
+	&__text
+		font-size: em(18px)
+		line-height: 1.25
+		color: #555
+		font-family: "OpenSansSemiBold", sans-serif
+		text-align: center

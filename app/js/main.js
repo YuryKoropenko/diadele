@@ -1,7 +1,8 @@
 $(document).ready(function() {
 		/*______Slider______*/
 	$(".slider__block").slick({
-		dots: true
+		dots: true,
+		arrows: false
 	});
 	/*_____Выпадающее меню_____*/
 	$(".nav__rings").on("click", function() {
@@ -47,5 +48,17 @@ $(document).ready(function() {
 	$(".nav__toggle").on("click", function() {
 		$(this).parent().children(".nav").stop(false, true).slideToggle(300);
 		return false
+	});
+
+	/*prod-slider*/
+	$('.f-slider').slick({
+		asNavFor: '.v-slider',
+		slidesToShow: 1
+	});
+	$('.v-slider').slick({
+		slidesToShow: 4,
+		asNavFor: '.f-slider',
+		focusOnSelect: true,
+		arrows: true
 	});
 });
