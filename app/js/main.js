@@ -38,6 +38,19 @@ $(document).ready(function() {
 		$(".looking__link").html(tv);
 		return false
 	});
+	/*_________Якорь__________*/
+	$(function() {
+		$(window).scroll(function() {
+			if($(this).scrollTop() != 0)
+				$('.arrow__button').fadeIn(300);
+			else
+			$('.arrow__button').fadeOut(300);
+		});
+	});
+	$(".arrow__button").on("click", function() {
+		$('html, body').animate({scrollTop:0}, 'slow');
+		return false;
+	});
 
 	/*_______Якорь_______*/
 	$(".arrow__button").on("click", function() {
@@ -52,13 +65,24 @@ $(document).ready(function() {
 
 	/*prod-slider*/
 	$('.f-slider').slick({
-		asNavFor: '.v-slider',
-		slidesToShow: 1
+		asNavFor: '.v-slider'
 	});
 	$('.v-slider').slick({
 		slidesToShow: 4,
 		asNavFor: '.f-slider',
 		focusOnSelect: true,
-		arrows: true
+		arrows: true,
 	});
+
+	$(document).ready(function() {
+		$('popular__item').click(function(e) { // Кнопка, которая активирует наши модальные окна
+		$('.modal-window__wrapper').reveal({ // Пункт, который будет открывать и раскрывать окно
+			animation: 'fade', // Анимация появления
+			animationspeed: 600, // Скорость анимации
+			closeonbackgroundclick: true // Нажатие на фон, чтобы закрыть окно
+		});
+		return false;
+		});
+	});
+
 });

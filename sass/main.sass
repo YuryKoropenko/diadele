@@ -290,6 +290,8 @@ body
 		width: 300px
 		text-align: left
 		padding-left: 64px
+	&__block
+		margin-bottom: 0 !important
 	&__title
 		font-family: "RalewayBold", sans-serif
 		font-size: em(40px)
@@ -303,6 +305,8 @@ body
 		margin-top: 12px
 		margin-left: 10px
 		display: block
+.slick-dots li button::before
+	content: '' !important
 .slick-arrow
 	display: none !important
 .slick-dots
@@ -659,6 +663,7 @@ body
 		margin-top: 32px
 .arrow
 	&__button
+		display: none
 		background-image: url(../img/arrow-footer.png)
 		background-repeat: no-repeat
 		background-position: center
@@ -666,7 +671,7 @@ body
 		height: 54px
 		border-radius: 50%
 		background-color: #f05154
-		position: absolute
+		position: fixed
 		left: 23px
 		bottom: 25px
 		-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
@@ -674,23 +679,22 @@ body
 		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
 
 /*________modal-window________*/
+.remodal
+	max-width: 80%
 
 .modal-window
-	width: 70%
-	margin: 0 15%
 	background-color: #fff
-	position: relative
-	top: 50%
 	padding-bottom: 388px
 	padding-left: 18px
 	padding-right: 55px
 	padding-top: 24px
 	z-index: 999
+	width: 100%
 	@extend .clearfix
-	&__wrapper
+	&__bg
 		background-color: rgba(#000,.7)
-		padding-top: 20px
-		padding-bottom: 20px
+	&__wrapper
+		
 	&__title
 		color: #000
 		display: block
@@ -737,6 +741,7 @@ body
 		color: #f05154
 		font-size: em(48px)
 		line-height: 1.25
+		text-align: left
 	&-dimensions
 		@extend .clearfix
 		padding-top: 16px
@@ -897,14 +902,14 @@ body
 		padding: 55px 0
 .v-slider
 	position: relative
-	width: 94%
-	padding: 0 3%
+	width: 100%
 	&__item
 		border: 1px solid #c1bfbf
-		width: 96% !important
-		padding: 0 2%
+		width: 91px !important
+		height: 104px !important
 		display: block
 		margin-top: 25px
+		box-sizing: border-box
 		img
 			width: 100%
 			height: auto
@@ -949,6 +954,8 @@ body
 	margin: 0 auto
 	position: relative
 	&__item
+		width: 339px !important
+		box-sizing: border-box
 		img
 			width: 100%
 			height: auto

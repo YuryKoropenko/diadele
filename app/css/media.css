@@ -142,6 +142,9 @@
     height: auto;
     border: 2px solid #b6ecea !important;
   }
+  .looking__wrapper {
+    margin-top: 45px;
+  }
   /**/
 }
 

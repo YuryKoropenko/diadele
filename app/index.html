@@ -16,6 +16,9 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/remodal/remodal.css">
+	<link rel="stylesheet" href="libs/remodal/remodal-default-theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -517,7 +520,7 @@
 						<h2 class="popular__title">
 							Популярные товары
 						</h2>
-						<a href="#" class="popular__item popular__item-first">
+						<a href="#modal" class="popular__item popular__item-first">
 							<img class="popular__img" src="img/prod/1.jpg" alt="">
 							<div class="popular__price">
 								28 000
@@ -794,13 +797,175 @@
 				</div>
 			</div>
 		</div>
-		<div class="arrow">
-			<a href="#" class="arrow__button"></a>
-		</div>
 	</footer>
+	<div class="arrow">
+		<a href="#" class="arrow__button"></a>
+	</div>
+	<!--Модальное окно-->
+	<div class="modal-window__wrapper remodal" data-remodal-id="modal">
+		<div class="modal-window__bg">
+		<div class="modal-window">
+			<h2 class="modal-window__title">
+				Кольцо из белого золота с бриллиантами
+			</h2>
+			<span class="modal-window__art">
+				арт. 89989898998
+			</span>
+			<div class="modal-window__prod-slider">
+				<div class="prod-slider">
+					<div class="prod-slider__v-slider">
+						<div class="v-slider">
+							<div class="v-slider__item">
+								<img src="img/slider-prod/slm1.jpg" alt="">
+							</div>
+							<div class="v-slider__item">
+								<img src="img/slider-prod/slm2.jpg" alt="">
+							</div>
+							<div class="v-slider__item">
+								<img src="img/slider-prod/slm3.jpg" alt="">
+							</div>
+							<div class="v-slider__item">
+								<img src="img/slider-prod/slm4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="prod-slider__f-slider">
+						<div class="f-slider">
+							<div class="f-slider__item">
+								<img src="img/slider-prod/sl1.jpg" alt="">
+							</div>
+							<div class="f-slider__item">
+								<img src="img/slider-prod/sl2.jpg" alt="">
+							</div>
+							<div class="f-slider__item">
+								<img src="img/slider-prod/sl3.jpg" alt="">
+							</div>
+							<div class="f-slider__item">
+								<img src="img/slider-prod/sl4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-window__bottom-p">
+				<div class="bottom-p">
+					<div class="bottom-p__item">
+						<i class="bottom-p__icon bottom-p__icon-1"></i>
+						<div class="bottom-p__text">
+							Бесплатная доставка
+						</div>
+					</div>
+					<div class="bottom-p__item">
+						<i class="bottom-p__icon bottom-p__icon-2"></i>
+						<div class="bottom-p__text">
+							Обмен товара
+						</div>
+					</div>
+					<div class="bottom-p__item">
+						<i class="bottom-p__icon bottom-p__icon-3"></i>
+						<div class="bottom-p__text">
+							Примерка на дому
+						</div>
+					</div>
+					<div class="bottom-p__item">
+						<i class="bottom-p__icon bottom-p__icon-4"></i>
+						<div class="bottom-p__text">
+							Коробочка в подарок
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="modal-window__p-description">
+				<div class="p-description">
+					<div class="p-description-price">
+						28 000 &yen;
+					</div>
+					<div class="p-description-dimensions">
+						<span class="p-description-dimensions-left">
+							Размеры
+						</span>
+						<span class="p-description-dimensions-right">
+							На складе: 15 шт.
+						</span>
+					</div>
+					<table class="dimensions">
+						<tbody>
+							<tr class="dimensions__row">
+								<td class="dimensions__item">14</td>
+								<td class="dimensions__item">14.5</td>
+								<td class="dimensions__item">15</td>
+								<td class="dimensions__item">15.5</td>
+								<td class="dimensions__item">16</td>
+								<td class="dimensions__item">16.5</td>
+								<td class="dimensions__item">17</td>
+							</tr>
+							<tr class="dimensions__row">
+								<td class="dimensions__item">17.5</td>
+								<td class="dimensions__item">18</td>
+								<td class="dimensions__item">18.5</td>
+								<td class="dimensions__item">19</td>
+								<td class="dimensions__item">19.5</td>
+								<td class="dimensions__item">20</td>
+								<td class="dimensions__item">20.5</td>
+							</tr>
+							<tr class="dimensions__row">
+								<td class="dimensions__item dimensions__item-last">
+									<a href="#" class="dimensions__link">Не знаю размер</a>
+								</td>
+								<td class="dimensions__item dimensions__item-last">
+									<a href="#" class="dimensions__link">Как узнать размер</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="p-description__buttons">
+						<div class="buttons">
+							<a href="#" class="buttons__button">Купить в 1 клик</a>
+							<a href="#" class="buttons__button">В корзину</a>
+						</div>
+					</div>
+					<div class="p-description__characteristics">
+						<div class="characteristics__main">
+							<div class="characteristics__main-item">
+								<i class="characteristics__main-icon characteristics__main-icon-first"></i>
+								<div class="characteristics__main-text">
+									Белое золото
+								</div>
+							</div>
+							<div class="characteristics__main-item">
+								<i class="characteristics__main-icon characteristics__main-icon-second"></i>
+								<div class="characteristics__main-text">
+									Проба
+								</div>
+							</div>
+							<div class="characteristics__main-item">
+								<i class="characteristics__main-icon characteristics__main-icon-third">2.3</i>
+								<div class="characteristics__main-text">
+									Вес изделия
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__assay-value">
+							<div class="characteristics__assay-value-top">
+								<a href="#" class="characteristics__assay-value-link">
+									Бриллиант
+								</a>
+								<a href="#" class="characteristics__assay-value-link">
+									Фианит
+								</a>
+							</div>
+							<a href="#" class="characteristics__assay-value-link-bottom">Выберите камень</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="libs/remodal/remodal.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>
