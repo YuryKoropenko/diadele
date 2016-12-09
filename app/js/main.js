@@ -64,14 +64,9 @@ $(document).ready(function() {
 	});
 
 	/*prod-slider*/
-	$('.f-slider').slick({
-		asNavFor: '.v-slider'
-	});
-	$('.v-slider').slick({
-		slidesToShow: 4,
-		asNavFor: '.f-slider',
-		focusOnSelect: true,
-		arrows: true,
+	$(".bxslider").bxSlider({
+		pagerCustom: "#bx-pager",
+		infiniteLoop: "true"
 	});
 
 	$(document).ready(function() {

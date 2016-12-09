@@ -1264,143 +1264,68 @@ body {
   color: #616161;
 }
 
-.prod-slider__v-slider {
-  width: 13.29787%;
-  float: left;
-}
-
-.prod-slider__f-slider {
-  width: 86.70213%;
-  float: left;
-  padding: 55px 0;
-}
-
-.v-slider {
-  position: relative;
+.prod-slider {
   width: 100%;
 }
 
-.v-slider__item {
+#bx-pager {
+  width: 15%;
+  float: left;
+}
+
+#bx-pager a {
   border: 1px solid #c1bfbf;
-  width: 91px !important;
-  height: 104px !important;
   display: block;
-  margin-top: 25px;
-  box-sizing: border-box;
+  width: 80%;
+  margin: 22px auto 0 auto;
 }
 
-.v-slider__item img {
+#bx-pager a img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
-.v-slider .slick-current {
-  border: 2px solid #51d3ce;
+#bx-pager .active {
+  border: 1px solid #48d1cc;
 }
 
-.v-slider .slick-next {
-  display: block;
-  z-index: 999;
+.bx-slider {
+  position: relative;
+  width: 100%;
 }
 
-.v-slider .slick-arrow {
-  display: block !important;
-  width: 32px;
-  height: 18px;
-}
-
-.v-slider .slick-prev, .v-slider .slick-next {
-  position: absolute;
-  top: 0;
-  left: 40%;
-}
-
-.v-slider .slick-prev::before, .v-slider .slick-next::before {
-  content: '';
-  background-image: url(../img/vsa.png);
-  background-position: top center;
-  opacity: 0.5;
-  display: block !important;
-  z-index: 999;
-  font-size: 70px !important;
-  width: 32px;
-  height: 18px;
-  color: #333;
-  font-size: 99px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.v-slider .slick-prev:hover::before, .v-slider .slick-next:hover::before {
-  opacity: 1;
-}
-
-.v-slider .slick-next {
-  top: 100%;
-}
-
-.v-slider .slick-next::before {
-  background-position: bottom center;
-}
-
-.f-slider {
-  width: 51.32979% !important;
-  margin: 0 auto;
+.bx-wrapper {
+  width: 85%;
+  float: left;
   position: relative;
 }
 
-.f-slider__item {
-  width: 339px !important;
-  box-sizing: border-box;
+.bx-wrapper .bxslider li {
+  width: 634px !important;
 }
 
-.f-slider__item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.f-slider .slick-arrow {
-  display: block !important;
+.bx-wrapper .bx-controls-direction a {
+  text-indent: -9999px;
   width: 30px;
   height: 57px;
-}
-
-.f-slider .slick-prev, .f-slider .slick-next {
-  position: absolute;
-  top: 50%;
-  left: -30%;
-}
-
-.f-slider .slick-prev::before, .f-slider .slick-next::before {
-  content: '';
   background-image: url(../img/fsa.png);
-  background-position: left 1px;
-  opacity: 0.5;
-  width: 30px;
-  display: block !important;
-  z-index: 999;
-  font-size: 70px !important;
-  height: 57px;
-  color: #333;
-  font-size: 99px;
+  background-repeat: no-repeat;
+  display: block;
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 999;
+  top: 50%;
+  margin-top: -28.5px;
 }
 
-.f-slider .slick-prev:hover::before, .f-slider .slick-next:hover::before {
-  opacity: 1;
+.bx-wrapper .bx-prev {
+  background-position: left top;
+  left: 20px;
 }
 
-.f-slider .slick-next {
-  left: 120%;
-}
-
-.f-slider .slick-next::before {
+.bx-wrapper .bx-next {
   background-position: right top;
+  right: 20px;
 }
 
 .bottom-p {
@@ -1408,6 +1333,7 @@ body {
   clear: left;
   margin-left: -7.91139%;
   padding-left: 20px;
+  padding-top: 30px;
 }
 
 .bottom-p__item {
