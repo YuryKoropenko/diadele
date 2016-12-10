@@ -1,6 +1,15 @@
 @import "bourbon/bourbon"
 
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1350px)
+	.modal-window__prod-slider
+		width: 100% !important
+	.modal-window__p-description
+		width: 100% !important
+		margin: 0 auto !important
+	.modal-window
+		padding: 24px 18px
+	/**/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -56,6 +65,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.remodal
+		max-width: 96% !important
 	.center-line
 		padding-bottom: 20px
 	.popular
