@@ -48,3 +48,9 @@
   font-style: normal;
   font-weight: normal;
 }
+
+/* font-family: "ProximaNovaBold" */
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url(../fonts/ProximaNovaBold/ProximaNovaBold.otf);
+}

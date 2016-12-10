@@ -1155,3 +1155,72 @@ body
 		&:hover
 			text-decoration: none
 			color: #555
+.stones-modal
+	@extend .clearfix
+	&__item
+		float: left
+		text-align: center
+		width: 100 / 3 + %
+		height: 134px
+		&-icon
+			display: block
+			margin: 0 auto
+			background-repeat: no-repeat
+			background-position: center
+			&-1
+				width: 67px
+				height: 67px
+				border-radius: 50%
+				background-color: #48d1cc
+				color: #fff
+				font-family: "OpenSansSemiBold", sans-serif
+				font-size: em(38px)
+				line-height: 67px
+			&-2
+				width: 64px
+				height: 58px
+				background-image: url(../img/stones/1.png)
+				margin-top: 9px
+			&-3
+				width: 58px
+				height: 73px
+				margin-top: 5px
+				background-image: url(../img/stones/2.png)
+				padding-top: 30px
+				font-family: "OpenSansSemiBold", sans-serif
+				font-size: em(22px)
+				color: #5d5d5d
+			&-4
+				width: 67px
+				height: 67px
+				background-image: url(../img/stones/3.png)
+				font-family: "OpenSansBold", sans-serif
+				font-size: em(34px)
+				color: #48d1cc
+				line-height: 65px
+			&-5
+				width: 82px
+				height: 75px
+				background-image: url(../img/stones/4.png)
+			&-6
+				width: 67px
+				height: 67px
+				background-image: url(../img/stones/5.png)
+				font-family: "OpenSansBold", sans-serif
+				font-size: em(34px)
+				color: #48d1cc
+				line-height: 65px
+		&-text
+			font-family: "OpenSansSemiBold", sans-serif
+			font-size: em(20px)
+			color: #616161
+			line-height: 1.1
+			padding-top: 5px
+	&__wrap
+		@extend .clearfix
+	&__estet
+		width: 100 / 3 * 2 + %
+		float: left
+	&__ru
+		width: 100 / 3 + %
+		float: right

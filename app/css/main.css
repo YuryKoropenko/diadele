@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .center-line__basket:after, .phone:after, .search:after, .menu:after, .slick-active:after, .looking__wrapper:after, .block__wrapper:after, .banners__wrapper:after, .footer__item:after, .footer__additionally:after, .modal-window:after, .p-description-dimensions:after, .dimensions__row:after, .buttons:after, .characteristics__main:after, .characteristics__assay-value-top:after, .prod-slider:after, .bx-wrapper .bxslider:after, .bottom-p:after, .m-bottom:after, .m-bottom__item:after, .m-bottom__row:after {
+.clearfix:after, .center-line__basket:after, .phone:after, .search:after, .menu:after, .slick-active:after, .looking__wrapper:after, .block__wrapper:after, .banners__wrapper:after, .footer__item:after, .footer__additionally:after, .modal-window:after, .p-description-dimensions:after, .dimensions__row:after, .buttons:after, .characteristics__main:after, .characteristics__assay-value-top:after, .prod-slider:after, .bx-wrapper .bxslider:after, .bottom-p:after, .m-bottom:after, .m-bottom__item:after, .m-bottom__row:after, .stones-modal:after, .stones-modal__wrap:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .center-line__basket:before, .phone:before, .search:before, .menu:before, .slick-active:before, .looking__wrapper:before, .block__wrapper:before, .banners__wrapper:before, .footer__item:before, .footer__additionally:before, .modal-window:before, .p-description-dimensions:before, .dimensions__row:before, .buttons:before, .characteristics__main:before, .characteristics__assay-value-top:before, .prod-slider:before, .bx-wrapper .bxslider:before, .bottom-p:before, .m-bottom:before, .m-bottom__item:before, .m-bottom__row:before {
+.clearfix:before, .center-line__basket:before, .phone:before, .search:before, .menu:before, .slick-active:before, .looking__wrapper:before, .block__wrapper:before, .banners__wrapper:before, .footer__item:before, .footer__additionally:before, .modal-window:before, .p-description-dimensions:before, .dimensions__row:before, .buttons:before, .characteristics__main:before, .characteristics__assay-value-top:before, .prod-slider:before, .bx-wrapper .bxslider:before, .bottom-p:before, .m-bottom:before, .m-bottom__item:before, .m-bottom__row:before, .stones-modal:before, .stones-modal__wrap:before {
   content: '';
   display: table;
 }
@@ -1609,4 +1609,91 @@ body {
 .m-bottom__credit:hover {
   text-decoration: none;
   color: #555;
+}
+
+.stones-modal__item {
+  float: left;
+  text-align: center;
+  width: 33.33333%;
+  height: 134px;
+}
+
+.stones-modal__item-icon {
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stones-modal__item-icon-1 {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: #48d1cc;
+  color: #fff;
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 2.375em;
+  line-height: 67px;
+}
+
+.stones-modal__item-icon-2 {
+  width: 64px;
+  height: 58px;
+  background-image: url(../img/stones/1.png);
+  margin-top: 9px;
+}
+
+.stones-modal__item-icon-3 {
+  width: 58px;
+  height: 73px;
+  margin-top: 5px;
+  background-image: url(../img/stones/2.png);
+  padding-top: 30px;
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 1.375em;
+  color: #5d5d5d;
+}
+
+.stones-modal__item-icon-4 {
+  width: 67px;
+  height: 67px;
+  background-image: url(../img/stones/3.png);
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 2.125em;
+  color: #48d1cc;
+  line-height: 65px;
+}
+
+.stones-modal__item-icon-5 {
+  width: 82px;
+  height: 75px;
+  background-image: url(../img/stones/4.png);
+}
+
+.stones-modal__item-icon-6 {
+  width: 67px;
+  height: 67px;
+  background-image: url(../img/stones/5.png);
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 2.125em;
+  color: #48d1cc;
+  line-height: 65px;
+}
+
+.stones-modal__item-text {
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 1.25em;
+  color: #616161;
+  line-height: 1.1;
+  padding-top: 5px;
+}
+
+.stones-modal__estet {
+  width: 66.66667%;
+  float: left;
+}
+
+.stones-modal__ru {
+  width: 33.33333%;
+  float: right;
 }
