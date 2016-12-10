@@ -23,6 +23,13 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<!-- End_Styles -->
+	<!-- Scripts -->
+	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="libs/remodal/remodal.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
 </head>
 <body>
 	<header class="header">
@@ -813,12 +820,16 @@
 			</span>
 			<div class="modal-window__prod-slider">
 				<div class="flexslider">
-					<div id="bx-pager">
+					<div class="bx-pager">
 						<a data-slide-index="0" href=""><img src="img/slider-prod/slm1.jpg"></a>
 						<a data-slide-index="1" href=""><img src="img/slider-prod/slm1.jpg"></a>
 						<a data-slide-index="2" href=""><img src="img/slider-prod/slm1.jpg"></a>
 						<a data-slide-index="3" href=""><img src="img/slider-prod/slm1.jpg"></a>
-				</div>
+						<div class="bx-pager-arrow">
+							<a href="" class="bx-pager-prev">Prev</a>
+							<a href="" class="bx-pager-next">Next</a>
+						</div>
+					</div>
 					<ul class="bxslider">
 						<li>
 							<img src="img/slider-prod/sl1.jpg">
@@ -950,12 +961,5 @@
 		</div>
 		</div>
 	</div>
-	<!-- Scripts -->
-	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
-	<script type="text/javascript" src="libs/bxslider/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="libs/remodal/remodal.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<!-- End_Scripts -->
 </body>
 </html>

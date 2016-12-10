@@ -49,13 +49,13 @@ $(document).ready(function() {
 	});
 	$(".arrow__button").on("click", function() {
 		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
+		return false
 	});
 
 	/*_______Якорь_______*/
 	$(".arrow__button").on("click", function() {
 		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
+		return false
 	});
 
 	$(".nav__toggle").on("click", function() {
@@ -64,20 +64,30 @@ $(document).ready(function() {
 	});
 
 	/*prod-slider*/
-	$(".bxslider").bxSlider({
-		pagerCustom: "#bx-pager",
-		infiniteLoop: "true"
+	$('.bxslider').bxSlider({
+		pagerSelector: '.bx-pager',
+		pagerCustom: '.bx-pager'
 	});
 
 	$(document).ready(function() {
-		$('popular__item').click(function(e) { // Кнопка, которая активирует наши модальные окна
+		$('popular__item').on('click', function(e) { // Кнопка, которая активирует наши модальные окна
 		$('.modal-window__wrapper').reveal({ // Пункт, который будет открывать и раскрывать окно
 			animation: 'fade', // Анимация появления
 			animationspeed: 600, // Скорость анимации
 			closeonbackgroundclick: true // Нажатие на фон, чтобы закрыть окно
 		});
-		return false;
+		return false
 		});
 	});
 
+	$(".bx-pager-prev").on("click", function() {
+		var bt = $(".bx-prev").click();
+
+		return false
+	});
+	$(".bx-pager-next").on("click", function() {
+		$(".bx-prev").trigger("click");
+		
+		return false
+	});
 });

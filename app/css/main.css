@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .center-line__basket:after, .phone:after, .search:after, .menu:after, .slick-active:after, .looking__wrapper:after, .block__wrapper:after, .banners__wrapper:after, .footer__item:after, .footer__additionally:after, .modal-window:after, .p-description-dimensions:after, .dimensions__row:after, .buttons:after, .characteristics__main:after, .characteristics__assay-value-top:after, .prod-slider:after, .bottom-p:after {
+.clearfix:after, .center-line__basket:after, .phone:after, .search:after, .menu:after, .slick-active:after, .looking__wrapper:after, .block__wrapper:after, .banners__wrapper:after, .footer__item:after, .footer__additionally:after, .modal-window:after, .p-description-dimensions:after, .dimensions__row:after, .buttons:after, .characteristics__main:after, .characteristics__assay-value-top:after, .prod-slider:after, .bx-wrapper .bxslider:after, .bottom-p:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .center-line__basket:before, .phone:before, .search:before, .menu:before, .slick-active:before, .looking__wrapper:before, .block__wrapper:before, .banners__wrapper:before, .footer__item:before, .footer__additionally:before, .modal-window:before, .p-description-dimensions:before, .dimensions__row:before, .buttons:before, .characteristics__main:before, .characteristics__assay-value-top:before, .prod-slider:before, .bottom-p:before {
+.clearfix:before, .center-line__basket:before, .phone:before, .search:before, .menu:before, .slick-active:before, .looking__wrapper:before, .block__wrapper:before, .banners__wrapper:before, .footer__item:before, .footer__additionally:before, .modal-window:before, .p-description-dimensions:before, .dimensions__row:before, .buttons:before, .characteristics__main:before, .characteristics__assay-value-top:before, .prod-slider:before, .bx-wrapper .bxslider:before, .bottom-p:before {
   content: '';
   display: table;
 }
@@ -989,6 +989,7 @@ body {
 /*________modal-window________*/
 .remodal {
   max-width: 80%;
+  padding: 0;
 }
 
 .modal-window {
@@ -1268,25 +1269,64 @@ body {
   width: 100%;
 }
 
-#bx-pager {
-  width: 15%;
-  float: left;
+.bx-wrapper {
+  padding: 53px 0;
 }
 
-#bx-pager a {
+.bx-pager {
+  width: 15%;
+  float: left;
+  position: relative;
+  padding: 26px 0;
+}
+
+.bx-pager a {
   border: 1px solid #c1bfbf;
   display: block;
   width: 80%;
   margin: 22px auto 0 auto;
 }
 
-#bx-pager a img {
+.bx-pager a:hover {
+  opacity: 0.7;
+}
+
+.bx-pager a img {
   width: 100%;
   height: auto;
 }
 
-#bx-pager .active {
+.bx-pager-arrow a {
+  text-indent: -9999px;
+  width: 32px;
+  height: 18px;
+  background-image: url(../img/vsa.png);
+  background-repeat: no-repeat;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  border: none;
+  margin-left: -16px;
+}
+
+.bx-pager-prev {
+  background-position: center top;
+  top: 0;
+}
+
+.bx-pager-next {
+  background-position: center bottom;
+  bottom: 0;
+}
+
+.bx-pager .active {
   border: 1px solid #48d1cc;
+}
+
+.bx-pager .active:hover {
+  opacity: 1;
 }
 
 .bx-slider {
@@ -1301,7 +1341,7 @@ body {
 }
 
 .bx-wrapper .bxslider li {
-  width: 634px !important;
+  width: 100%;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -1318,6 +1358,10 @@ body {
   margin-top: -28.5px;
 }
 
+.bx-wrapper .bx-controls-direction a:hover {
+  opacity: 0.7;
+}
+
 .bx-wrapper .bx-prev {
   background-position: left top;
   left: 20px;
@@ -1325,7 +1369,7 @@ body {
 
 .bx-wrapper .bx-next {
   background-position: right top;
-  right: 20px;
+  right: 34px;
 }
 
 .bottom-p {
