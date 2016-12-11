@@ -23,6 +23,19 @@ $(document).ready(function() {
 	}
 		return false
 	});
+
+	$(".characteristics__assay-value-link-bottom").on("click", function() {
+		$(this).parent().children(".assay__stones-modal").stop(false, true).fadeToggle(300);
+		return false
+	});
+	$(".stones-modal__tr").hover(function() {
+		$(this).parent().children(".stones-modal__pop-up").stop(false, true).show(100);
+		$(this).addClass("stones-modal__add");
+	}, function() {
+		$(this).parent().children(".stones-modal__pop-up").stop(false, true).hide(100);
+		$(this).removeClass("stones-modal__add");
+	});
+
 	/*_____section____*/
 	$(".looking__link").on("click", function() {
 		$(this).toggleClass("looking__link-active")

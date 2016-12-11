@@ -1260,7 +1260,7 @@ body {
   display: inline-block;
 }
 
-.characteristics__assay-value-link-bottom:hover {
+.characteristics__assay-value-link-bottom:hover, .characteristics__assay-value-link-bottom:active, .characteristics__assay-value-link-bottom:focus {
   text-decoration: none;
   color: #616161;
 }
@@ -1565,6 +1565,10 @@ body {
   color: #fff;
 }
 
+.m-bottom__button:hover {
+  color: #fff;
+}
+
 .m-bottom__wripper {
   width: 25%;
   float: left;
@@ -1609,6 +1613,10 @@ body {
 .m-bottom__credit:hover {
   text-decoration: none;
   color: #555;
+}
+
+.assay__stones-modal {
+  display: none;
 }
 
 .stones-modal__item {
@@ -1688,12 +1696,60 @@ body {
   padding-top: 5px;
 }
 
+.stones-modal__tr {
+  position: relative;
+  cursor: pointer;
+}
+
+.stones-modal__add::after {
+  content: '';
+  display: block;
+  background-image: url(../img/stones/tr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 32px;
+  height: 22px;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
 .stones-modal__estet {
   width: 66.66667%;
   float: left;
+  text-align: center;
+}
+
+.stones-modal__estet-img {
+  display: inline-block;
 }
 
 .stones-modal__ru {
   width: 33.33333%;
   float: right;
+  text-align: center;
+}
+
+.stones-modal__ru-img {
+  display: inline-block;
+}
+
+.stones-modal__pop-up {
+  width: 100%;
+  border: 3px solid #48d1cc;
+  float: left;
+  text-align: left;
+  padding: 18px 26px;
+  margin-bottom: 21px;
+  display: none;
+}
+
+.stones-modal__pop-up-description {
+  display: block;
+  font-size: 0.9375em;
+  font-family: "OpenSansSemiBold", sans-serif;
+  color: #555;
+  line-height: 1.1;
 }
