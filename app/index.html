@@ -15,8 +15,6 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
-	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="libs/remodal/remodal.css">
 	<link rel="stylesheet" href="libs/remodal/remodal-default-theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -25,9 +23,9 @@
 	<!-- End_Styles -->
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script type="text/javascript" src="libs/bxslider/jquery.bxslider.min.js"></script>
 	<script type="text/javascript" src="libs/remodal/remodal.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -77,6 +75,7 @@
 							<div class="center-line__phone">
 								<div class="phone">
 									<div class="phone__number">
+										<i class="phone__number-icon"></i>
 										<span>8</span>800-2000-600
 									</div>
 									<div class="phone__text">
@@ -373,47 +372,40 @@
 			</div>
 		</div>
 	</header>
-	<section class="slider">
+	<section class="w-slider">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="slider__block">
-						<div class="slider__item">
-							<img class="slider__img" src="img/slider/1.jpg" alt="">
+					<ul class="slider">
+						<li class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
 								<h2 class="slider__title">Бабочки</h2>
 								<span class="slider__discount">10%</span>
 							</div>
-						</div>
-						<div class="slider__item">
-							<img class="slider__img" src="img/slider/1.jpg" alt="">
+						</li>
+						<li class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
 								<h2 class="slider__title">Бабочки</h2>
 								<span class="slider__discount">10%</span>
 							</div>
-						</div>
-						<div class="slider__item">
-							<img class="slider__img" src="img/slider/1.jpg" alt="">
+						</li>
+						<li class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
 								<h2 class="slider__title">Бабочки</h2>
 								<span class="slider__discount">10%</span>
 							</div>
-						</div>
-						<div class="slider__item">
-							<img class="slider__img" src="img/slider/1.jpg" alt="">
+						</li>
+						<li class="slider__item">
+							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
 								<h2 class="slider__title">Бабочки</h2>
 								<span class="slider__discount">10%</span>
 							</div>
-						</div>
-						<div class="slider__item">
-							<img class="slider__img" src="img/slider/1.jpg" alt="">
-							<div class="slider__text">
-								<h2 class="slider__title">Бабочки</h2>
-								<span class="slider__discount">10%</span>
-							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

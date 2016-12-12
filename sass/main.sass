@@ -50,6 +50,10 @@ body
 			left: 0
 			top: 50%
 			margin-top: -10px
+		&:hover
+			text-decoration: underline
+			.authentication__link-icon
+				opacity: 0.7
 .center-line
 	min-height: 98px
 	background-color: #fff
@@ -86,12 +90,23 @@ body
 		-webkit-transform: scale(1,1.25)
 		-ms-transform: scale(1,1.25)
 		padding-left: 31px
-		background-image: url(../img/phone.png)
-		background-repeat: no-repeat
-		background-position: left center
 		display: block
 		float: left
-		width: 50%
+		width: 60%
+		&-icon
+			display: inline-block
+			background-image: url(../img/phone.png)
+			background-repeat: no-repeat
+			background-position: center
+			width: 21px
+			height: 22px
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -11px
+			transform: scale(1,0.75)
+			-webkit-transform: scale(1,0.75)
+			-ms-transform: scale(1,0.75)
 		span
 			font-size: 0.75em
 			color: #636363
@@ -99,7 +114,7 @@ body
 	&__text
 		display: block
 		float: right
-		width: 50%
+		width: 40%
 		text-align: right
 		font-size: em(15px)
 		transform: scale(1,1.25)
@@ -181,6 +196,21 @@ body
 		margin: 0 12px
 		display: inline-block
 		position: relative
+		&::before
+			content: ''
+			height: 28px
+			width: 1px
+			background-color: #929292
+			position: absolute
+			left: -13px
+			bottom: 2px
+			display: block
+		&:first-child
+			&::before
+				display: none
+		&:hover
+			&::before
+				bottom: 6px
 	&__link
 		padding: 0 7px
 		line-height: 50px
@@ -271,6 +301,9 @@ body
 		display: inline-block
 		&:hover
 			text-decoration: underline
+.bx-wrapper
+	padding: 0 !important
+	width: 100% !important
 .slider
 	z-index: -999
 	&__item
@@ -286,10 +319,11 @@ body
 		right: 0
 		top: 0
 		padding-top: 68px
-		padding-right: 86px
-		width: 300px
+		padding-right: 10px
+		width: 30%
 		text-align: left
-		padding-left: 64px
+		padding-left: 10px
+		box-sizing: border-box
 	&__block
 		margin-bottom: 0 !important
 	&__title
@@ -892,11 +926,14 @@ body
 				&:hover, &:active, &:focus
 					text-decoration: none
 					color: #616161
+.flexslider
+	.bx-wrapper
+		padding: 53px 0
+		width: 85% !important
+.flex-slider
 .prod-slider
 	width: 100%
 	@extend .clearfix
-.bx-wrapper
-	padding: 53px 0
 .bx-pager
 	width: 15%
 	float: left
