@@ -66,3 +66,124 @@ select
 
 strong
 	font-weight: normal
+
+/**/
+.modal-window__wrapper
+	width: 80%
+	margin: 10px auto
+.flexslider
+	@extend .clearfix
+	position: relative
+	.bx-pager
+		float: left
+		width: 15%
+		position: relative
+		padding: 26px 0
+	.bx-wrapper
+		float: right
+		width: 85%
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+.flexslider
+	.bx-wrapper
+		padding: 53px 0
+		width: 85% !important
+		text-align: center
+.flex-slider
+.prod-slider
+	width: 100%
+	@extend .clearfix
+.bx-pager
+	a
+		border: 1px solid #c1bfbf
+		display: block
+		width: 80%
+		margin: 22px auto 0 auto
+		&:hover
+			opacity: 0.7
+		img
+			width: 100%
+			height: auto
+	&-arrow
+		a
+			text-indent: -9999px
+			width: 32px
+			height: 18px
+			background-image: url(../img/vsa.png)
+			background-repeat: no-repeat
+			display: block
+			cursor: pointer
+			position: absolute
+			z-index: 999
+			left: 50%
+			border: none
+			margin-left: -16px
+	&-prev
+		background-position: center top
+		top: 0
+	&-next
+		background-position: center bottom
+		bottom: 0
+	.active
+		border: 1px solid #48d1cc
+		&:hover
+			opacity: 1
+.bx-slider
+	position: relative
+	width: 100%
+.bx-wrapper
+	.bxslider
+		@extend .clearfix
+		li
+			width: 100%
+			img
+	.bx-viewport
+	.bx-controls-direction
+		a
+			text-indent: -9999px
+			width: 30px
+			height: 57px
+			background-image: url(../img/fsa.png)
+			background-repeat: no-repeat
+			display: block
+			cursor: pointer
+			position: absolute
+			z-index: 999
+			top: 50%
+			margin-top: -28.5px
+			&:hover
+				opacity: 0.7
+	.bx-prev
+		background-position: left top
+		left: 20px
+	.bx-next
+		background-position: right top
+		right: 34px
+/*pager*/
+.w-slider
+	.bx-wrapper
+		position: relative
+	.bx-pager
+		position: absolute
+		width: 100% !important
+		text-align: center
+		bottom: 6px
+		left: 0
+		right: 0
+		padding: 0
+	.bx-pager-item
+		display: inline-block
+		text-indent: -9999px
+		padding-left: 23px
+		&:first-child
+			padding-left: 0
+	.bx-pager-link
+		width: 15px !important
+		height: 15px !important
+		background-color: #ddd
+		border-radius: 50%
+		display: block
+	.active
+		background-color: #6ddad6

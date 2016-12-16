@@ -1,34 +1,44 @@
 $(document).ready(function() {
+	/*Pop-up*/
+	$(".popular__item-first").magnificPopup();
 	/*_____Выпадающее меню_____*/
 	$(".nav__rings").on("click", function() {
 		if(!$(".rings").is(':visible')) {
 			$(".popup").hide();
-			$(".rings").stop(false, true).fadeIn(300);
+			$(".rings").stop(false, true).show();
 		} else {
-		$(".rings").fadeOut(300);
+		$(".rings").hide();
 	}
 		return false
 	});
+	/**/
+	$('.bx-pager-prev').on('click', function(e) {
+		$('.bx-prev').trigger('click', true);
+	});
+
+	$('.bx-pager-next').on('click', function(e) {
+		$('.bx-next').trigger('click', true);
+	});
+	/*_____popup_______*/
 	$(".nav__earrings").on("click", function() {
 		if(!$(".earrings").is(':visible')) {
 			$(".popup").hide();
-			$(".earrings").stop(false, true).fadeIn(300);
+			$(".earrings").stop(false, true).show();
 		} else {
-		$(".earrings").fadeOut(300);
+		$(".earrings").hide();
 	}
 		return false
 	});
 
+/**/
 	$(".characteristics__assay-value-link-bottom").on("click", function() {
 		$(this).parent().children(".assay__stones-modal").stop(false, true).fadeToggle(300);
 		return false
 	});
-	$(".stones-modal__tr").hover(function() {
-		$(this).parent().children(".stones-modal__pop-up").stop(false, true).show(100);
-		$(this).addClass("stones-modal__add");
-	}, function() {
-		$(this).parent().children(".stones-modal__pop-up").stop(false, true).hide(100);
-		$(this).removeClass("stones-modal__add");
+/**/
+	$(".stones-modal__tr").on("click", function() {
+		$(this).parent().children(".stones-modal__pop-up").slideToggle(100);
+		$(this).toggleClass("stones-modal__add");
 	});
 
 	/*_____section____*/
@@ -71,17 +81,7 @@ $(document).ready(function() {
 		return false
 	});
 
-	$(document).ready(function() {
-		$('popular__item').on('click', function(e) { // Кнопка, которая активирует наши модальные окна
-		$('.modal-window__wrapper').reveal({ // Пункт, который будет открывать и раскрывать окно
-			animation: 'fade', // Анимация появления
-			animationspeed: 600, // Скорость анимации
-			closeonbackgroundclick: true // Нажатие на фон, чтобы закрыть окно
-		});
-		return false
-		});
-	});
-			/*prod-slider*/
+				/*prod-slider*/
 	$('.bxslider').bxSlider({
 		pagerSelector: '.bx-pager',
 		pagerCustom: '.bx-pager'

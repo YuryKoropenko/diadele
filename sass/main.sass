@@ -196,15 +196,6 @@ body
 		margin: 0 12px
 		display: inline-block
 		position: relative
-		&::before
-			content: ''
-			height: 28px
-			width: 1px
-			background-color: #929292
-			position: absolute
-			left: -13px
-			bottom: 2px
-			display: block
 		&:first-child
 			&::before
 				display: none
@@ -318,7 +309,7 @@ body
 		height: 350px
 		right: 0
 		top: 0
-		padding-top: 68px
+		padding-top: 28px
 		padding-right: 10px
 		width: 30%
 		text-align: left
@@ -329,15 +320,17 @@ body
 	&__title
 		font-family: "RalewayBold", sans-serif
 		font-size: em(40px)
-		color: #7ed1f1
-		line-height: 1.25
+		color: #36b5e2
+		display: inline-block
+		line-height: 100%
 	&__discount
 		font-family: "RalewayRegular", sans-serif
 		font-size: em(20px)
 		color: #7ed1f1
 		line-height: 1.25
-		margin-top: 12px
-		margin-left: 10px
+		&:first-child
+			margin-bottom: 6px
+		
 		display: block
 .slick-dots li button::before
 	content: '' !important
@@ -713,10 +706,6 @@ body
 		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2)
 
 /*________modal-window________*/
-.remodal
-	max-width: 80%
-	padding: 0
-
 .modal-window
 	background-color: #fff
 	padding-bottom: 32px
@@ -818,6 +807,11 @@ body
 		font-size: em(20px)
 		color: #000
 		line-height: 55px
+		cursor: pointer
+		&:hover
+			background-color: #c9f1f0
+		&:active
+			background-color: #48d0cc
 		&-last
 			width: 50%
 			border-right: 2px solid #48d1cc
@@ -834,6 +828,9 @@ body
 		&:hover
 			text-decoration: underline
 			color: #555
+			background-color: #fff
+		&:active
+			background-color: #fff
 .buttons
 	width: 100%
 	padding-top: 30px
@@ -926,87 +923,6 @@ body
 				&:hover, &:active, &:focus
 					text-decoration: none
 					color: #616161
-.flexslider
-	.bx-wrapper
-		padding: 53px 0
-		width: 85% !important
-.flex-slider
-.prod-slider
-	width: 100%
-	@extend .clearfix
-.bx-pager
-	width: 15%
-	float: left
-	position: relative
-	padding: 26px 0
-	a
-		border: 1px solid #c1bfbf
-		display: block
-		width: 80%
-		margin: 22px auto 0 auto
-		&:hover
-			opacity: 0.7
-		img
-			width: 100%
-			height: auto
-	&-arrow
-		a
-			text-indent: -9999px
-			width: 32px
-			height: 18px
-			background-image: url(../img/vsa.png)
-			background-repeat: no-repeat
-			display: block
-			cursor: pointer
-			position: absolute
-			z-index: 999
-			left: 50%
-			border: none
-			margin-left: -16px
-	&-prev
-		background-position: center top
-		top: 0
-	&-next
-		background-position: center bottom
-		bottom: 0
-	.active
-		border: 1px solid #48d1cc
-		&:hover
-			opacity: 1
-.bx-slider
-	position: relative
-	width: 100%
-.bx-wrapper
-	width: 85%
-	float: left
-	position: relative
-	.bxslider
-		@extend .clearfix
-		li
-			width: 100%
-			img
-	.bx-viewport
-	.bx-controls-direction
-		a
-			text-indent: -9999px
-			width: 30px
-			height: 57px
-			background-image: url(../img/fsa.png)
-			background-repeat: no-repeat
-			display: block
-			cursor: pointer
-			position: absolute
-			z-index: 999
-			top: 50%
-			margin-top: -28.5px
-			&:hover
-				opacity: 0.7
-	.bx-prev
-		background-position: left top
-		left: 20px
-	.bx-next
-		background-position: right top
-		right: 34px
 .bottom-p
 	width: 100%
 	@extend .clearfix
@@ -1150,6 +1066,7 @@ body
 		border-radius: 18px
 		margin-left: 5%
 		float: left
+		text-align: center
 		display: block
 		background-color: #f05154
 		font-family: "OpenSansSemiBold", sans-serif
@@ -1198,11 +1115,32 @@ body
 	display: none
 .stones-modal
 	@extend .clearfix
+	margin-left: -6.3%
+	position: relative
 	&__item
 		float: left
 		text-align: center
-		width: 100 / 3 + %
+		width: 27%
 		height: 134px
+		margin-left: 6.3%
+		&-diamond
+			width: 45%
+			margin-left: 0
+			.stones-modal__item-icon
+				background-image: url(../img/stones/4-1.png)
+				float: left
+			.stones-modal__item-ops
+				font-family: "OpenSansRegular", sans-serif
+				font-size: em(15px)
+				color: #000
+				padding-top: 14px
+				line-height: 1.2
+		&-last
+			margin-left: 0
+			position: absolute
+			right: -51px
+			bottom: 0
+			float: none
 		&-icon
 			display: block
 			margin: 0 auto

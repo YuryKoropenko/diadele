@@ -15,8 +15,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/remodal/remodal.css">
-	<link rel="stylesheet" href="libs/remodal/remodal-default-theme.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -24,7 +23,7 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/bxslider/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="libs/remodal/remodal.min.js"></script>
+	<script type="text/javascript" src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
@@ -380,29 +379,33 @@
 						<li class="slider__item">
 							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
+								<span class="slider__discount">Коллекция</span>
 								<h2 class="slider__title">Бабочки</h2>
-								<span class="slider__discount">10%</span>
+								<span class="slider__discount">Ювелирные цветы и<br>бабочки со скидкой 10%</span>
 							</div>
 						</li>
 						<li class="slider__item">
 							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
+								<span class="slider__discount">Коллекция</span>
 								<h2 class="slider__title">Бабочки</h2>
-								<span class="slider__discount">10%</span>
+								<span class="slider__discount">Ювелирные цветы и<br>бабочки со скидкой 10%</span>
 							</div>
 						</li>
 						<li class="slider__item">
 							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
+								<span class="slider__discount">Коллекция</span>
 								<h2 class="slider__title">Бабочки</h2>
-								<span class="slider__discount">10%</span>
+								<span class="slider__discount">Ювелирные цветы и<br>бабочки со скидкой 10%</span>
 							</div>
 						</li>
 						<li class="slider__item">
 							<img class="slider__img" src="img/slider/1.jpg" title="" />
 							<div class="slider__text">
+								<span class="slider__discount">Коллекция</span>
 								<h2 class="slider__title">Бабочки</h2>
-								<span class="slider__discount">10%</span>
+								<span class="slider__discount">Ювелирные цветы и<br>бабочки со скидкой 10%</span>
 							</div>
 						</li>
 					</ul>
@@ -801,7 +804,7 @@
 		<a href="#" class="arrow__button"></a>
 	</div>
 	<!--Модальное окно-->
-	<div class="modal-window__wrapper remodal" data-remodal-id="modal">
+	<div class="modal-window__wrapper mfp-hide" id="modal">
 		<div class="modal-window__bg">
 			<div class="modal-window">
 				<h2 class="modal-window__title">
@@ -972,10 +975,13 @@
 												Цвет
 											</div>
 										</div>
-										<div class="stones-modal__item">
+										<div class="stones-modal__item stones-modal__item-diamond">
 											<i class="stones-modal__item-icon stones-modal__item-icon-5"></i>
+											<div class="stones-modal__item-ops">
+												Незначительный<br>желтый оттенок
+											</div>
 										</div>
-										<div class="stones-modal__item">
+										<div class="stones-modal__item stones-modal__item-last">
 											<i class="stones-modal__item-icon stones-modal__item-icon-6">4</i>
 											<div class="stones-modal__item-text">
 												Чистота
