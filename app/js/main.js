@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	/*Pop-up*/
+/*modal*/
 	$(".popular__item-first").magnificPopup();
 	/*_____Выпадающее меню_____*/
 	$(".nav__rings").on("click", function() {
@@ -12,11 +12,11 @@ $(document).ready(function() {
 		return false
 	});
 	/**/
-	$('.bx-pager-prev').on('click', function(e) {
+	$('.p-slider-pager-prev').on('click', function(e) {
 		$('.bx-prev').trigger('click', true);
 	});
 
-	$('.bx-pager-next').on('click', function(e) {
+	$('.p-slider-pager-next').on('click', function(e) {
 		$('.bx-next').trigger('click', true);
 	});
 	/*_____popup_______*/
@@ -79,11 +79,5 @@ $(document).ready(function() {
 	$(".nav__toggle").on("click", function() {
 		$(this).parent().children(".nav").stop(false, true).slideToggle(300);
 		return false
-	});
-
-				/*prod-slider*/
-	$('.bxslider').bxSlider({
-		pagerSelector: '.bx-pager',
-		pagerCustom: '.bx-pager'
 	});
 });

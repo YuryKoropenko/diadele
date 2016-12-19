@@ -71,41 +71,73 @@ strong
 .modal-window__wrapper
 	width: 80%
 	margin: 10px auto
-.flexslider
+.p-slider__wrapper
 	@extend .clearfix
+	width: 100%
 	position: relative
-	.bx-pager
+	.p-slider-pager
 		float: left
 		width: 15%
 		position: relative
-		padding: 26px 0
+		text-align: right
+		padding: 28px 0
+		a
+			border: 1px solid #c1bfbf
+			display: block
+			width: 80%
+			margin: 22px auto 0 auto
+			&:hover
+				opacity: 0.7
+			img
+				width: 100%
+				height: auto
+		.active
+			border: 1px solid #48d1cc
+		&-arrow
+			a
+				text-indent: -9999px
+				width: 32px
+				height: 18px
+				background-image: url(../img/vsa.png)
+				background-repeat: no-repeat
+				display: block
+				cursor: pointer
+				position: absolute
+				z-index: 999
+				left: 50%
+				border: none
+				margin-left: -16px
+		&-prev
+			background-position: center top
+			top: 0
+		&-next
+			background-position: center bottom
+			bottom: 0
+		.active
+			border: 1px solid #48d1cc
+			&:hover
+				opacity: 1
 	.bx-wrapper
-		float: right
-		width: 85%
+		text-align: center
 		position: absolute
 		right: 0
 		top: 50%
-		transform: translateY(-50%)
-.flexslider
-	.bx-wrapper
-		padding: 53px 0
+		float: right
 		width: 85% !important
-		text-align: center
+		transform: translateY(-50%)
+.p-slider
+	position: relative
+.bx-prev
+		background-position: left top
+		left: 20px
+.bx-next
+	background-position: right top
+	right: 20px
 .flex-slider
 .prod-slider
 	width: 100%
 	@extend .clearfix
 .bx-pager
-	a
-		border: 1px solid #c1bfbf
-		display: block
-		width: 80%
-		margin: 22px auto 0 auto
-		&:hover
-			opacity: 0.7
-		img
-			width: 100%
-			height: auto
 	&-arrow
 		a
 			text-indent: -9999px
@@ -160,7 +192,7 @@ strong
 		left: 20px
 	.bx-next
 		background-position: right top
-		right: 34px
+		right: 20px
 /*pager*/
 .w-slider
 	.bx-wrapper
