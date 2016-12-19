@@ -1,6 +1,4 @@
 $(document).ready(function() {
-/*modal*/
-	$(".popular__item-first").magnificPopup();
 	/*_____Выпадающее меню_____*/
 	$(".nav__rings").on("click", function() {
 		if(!$(".rings").is(':visible')) {
@@ -79,5 +77,28 @@ $(document).ready(function() {
 	$(".nav__toggle").on("click", function() {
 		$(this).parent().children(".nav").stop(false, true).slideToggle(300);
 		return false
+	});
+	$('.stones-modal__item-d').on('click', function() {
+		$(this).addClass('stones-modal__item-diamond');
+		$('.stones-modal__item-l').addClass('stones-modal__item-last');
+		$('.stones-modal__item-o').css('display', 'block');
+	});
+	/*modal*/
+	$('.popular__item-first').on('click', function() {
+		$('.modal-window__wrapper').addClass('opacity-c');
+		$('.podl').addClass('opacity-c');
+		$('.modal-window__wrapper').css('z-index', '1000');
+		$('.podl').css('z-index', '999');
+		$('body').css('overflow', 'hidden');
+		return false
+	});
+	$('.podl').on('click', function(e) {
+		if (!$(e.target).closest(".modal-window__bg").length) {
+			$('.modal-window__wrapper').removeClass('opacity-c');
+			$('.podl').removeClass('opacity-c');
+			$('.modal-window__wrapper').css('z-index', '-1000');
+			$('.podl').css('z-index', '-999');
+			$('body').css('overflow', 'auto');
+		}
 	});
 });

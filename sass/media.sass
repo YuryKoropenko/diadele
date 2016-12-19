@@ -68,6 +68,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.modal-window__title
+		display: block
+		width: 100%
+		text-align: center
+	.modal-window__art
+		display: block
+		width: 100%
+		text-align: center
 	.remodal
 		max-width: 96% !important
 	.center-line
@@ -133,6 +141,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.modal-window__art
+		display: none
+	.m-bottom, .modal-window__m-bottom
+		display: none
 	.w-slider
 		display: none
 	.popular
@@ -149,6 +161,27 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.characteristics__main-item
+		display: block
+		margin-left: 0
+		text-align: center
+		float: none
+		width: 105%
+		float: none !important
+		margin-bottom: 10px
+	.bottom-p__item
+		width: 110%
+		display: block
+		padding-bottom: 10px
+		margin-left: 0
+		float: none !important
+	.modal-window
+		padding: 10px 5px
+	.stones-modal__item
+		width: 100%
+		margin-left: 0 !important
+	.dimensions__item-last
+		width: 100%
 	body
 		font-size: 14px
 	.banners, .block
