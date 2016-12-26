@@ -1237,3 +1237,424 @@ body
 			font-family: "OpenSansSemiBold", sans-serif
 			color: #555
 			line-height: 1.1
+/*catalog-t*/
+.path
+	&__item
+		display: inline-block
+		font-family: "OpenSansRegular", sans-serif
+		&::before
+			content: "/"
+			font-size: em(10px)
+			color: #636363
+		&:first-child
+			&::before
+				display: none
+	&__link
+		font-size: em(10px)
+		color: #636363
+		text-decoration: underline
+		&:hover
+			color: #636363
+	&__last
+		font-size: em(10px)
+		color: #2e2e2e
+		font-family: "OpenSansSemiBold", sans-serif
+.filters
+	height: 122px
+	background-color: #a0e7e4
+	width: 100%
+	padding-top: 8px
+	padding-bottom: 4px
+	margin-top: 4px
+	@extend .clearfix
+	&__price
+		+percent(218, 1201)
+		text-align: center
+		position: relative
+		height: 110px
+		float: left
+		label
+			color: #636363
+			font-size: em(12px)
+			letter-spacing: 0.25px
+			font-family: "OpenSansSemiBold", sans-serif
+		&-title
+			font-family: "OpenSansSemiBold", sans-serif
+			color: #fff
+			font-size: em(15px)
+			letter-spacing: 0.25px
+			margin-bottom: 10px
+		&-sl
+			margin: 0 auto
+			margin-top: 21px
+			&-first
+				background: none
+				border: none
+				width: 64px
+				border-bottom: 1px solid #fff
+				color: #636363
+				font-size: em(12px)
+				letter-spacing: 0.25px
+				font-family: "OpenSansSemiBold", sans-serif
+			&-last
+				background: none
+				border: none
+				width: 64px
+				border-bottom: 1px solid #fff
+				color: #636363
+				font-size: em(12px)
+				letter-spacing: 0.25px
+				font-family: "OpenSansSemiBold", sans-serif
+		&-button
+			position: absolute
+			bottom: 0
+			left: 18px
+			right: 18px
+			color: #424242
+			background-color: rgba(#fff,.6)
+			display: block
+			font-size: em(10px)
+			letter-spacing: 0.25px
+			font-family: "SegoeUIRegular", sans-serif
+			padding: 2px 0
+			border-radius: 2px
+	&__size
+		text-align: center
+		position: relative
+		height: 110px
+		float: left
+		+percent(178, 1201)
+		&::before
+			content: ''
+			width: 1px
+			height: 90px
+			background-color: #8fcdca
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&-block
+			@extend .clearfix
+			margin-left: -7px
+			padding-left: 13px
+			&-item
+				float: left
+				margin-left: 7px
+				margin-bottom: 9px
+			&-link
+				width: 33px
+				height: 23px
+				background-color: #fff
+				display: block
+				font-family: "OpenSansRegular", sans-serif
+				font-size: em(12px)
+				line-height: 23px
+				color: #636363
+				&:hover
+					color: #636363
+					background-color: #c9f1f0
+				&:active
+					color: #636363
+					background-color: #48d0cc
+		&-button
+			left: 13px
+			right: 13px
+	&__metal
+		+percent(182, 1201)
+		text-align: center
+		position: relative
+		height: 110px
+		float: left
+		&::before
+			content: ''
+			width: 1px
+			height: 90px
+			background-color: #8fcdca
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&-left
+			text-align: left
+			width: 60%
+			float: left
+			padding-left: 12px
+		&-right
+			text-align: left
+			width: 40%
+			float: right
+			padding-right: 12px
+		&-center
+			text-align: center
+			width: 100%
+		&-item
+			line-height: 0.65em
+		&-link
+			font-size: em(11px)
+			color: #292929
+			text-decoration: underline
+			display: inline-block
+		&-button
+			left: 12px
+			right: 12px
+	&__stone
+		+percent(241, 1201)
+		text-align: center
+		position: relative
+		height: 110px
+		float: left
+		&::before
+			content: ''
+			width: 1px
+			height: 90px
+			background-color: #8fcdca
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&-block
+			@extend .clearfix
+			padding-left: 15px
+			margin-left: -7px
+			padding-right: 15px
+		&-item
+			display: block
+			float: left
+			margin-left: 7px
+			line-height: 0.65em
+		&-link
+			color: #292929
+			font-size: em(11px)
+			font-family: "OpenSansRegular", sans-serif
+			text-decoration: underline
+		&-button
+			left: 15px
+			right: 15px
+	&__brand
+		+percent(134, 1201)
+		text-align: center
+		position: relative
+		height: 110px
+		float: left
+		&::before
+			content: ''
+			width: 1px
+			height: 90px
+			background-color: #8fcdca
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&-block
+			@extend .clearfix
+		&-item
+			display: block
+			line-height: 0.65em
+		&-link
+			color: #292929
+			font-size: em(11px)
+			font-family: "OpenSansRegular", sans-serif
+			text-decoration: underline
+		&-button
+			left: 12px
+			right: 12px
+	&__collection
+		+percent(162, 1201)
+		text-align: center
+		position: relative
+		height: 110px
+		float: left
+		&::before
+			content: ''
+			width: 1px
+			height: 90px
+			background-color: #8fcdca
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&-block
+			@extend .clearfix
+			padding-left: 12px
+			padding-right: 12px
+			margin-left: -7px
+		&-item
+			display: block
+			float: left
+			margin-left: 7px
+			line-height: 0.65em
+		&-link
+			color: #292929
+			font-size: em(11px)
+			font-family: "OpenSansRegular", sans-serif
+			text-decoration: underline
+		&-button
+			left: 12px
+			right: 12px
+	&__search
+		float: right
+		margin-right: 10px
+		padding-top: 4px
+		&-button
+			height: 84px
+			width: 50px
+			background-color: #f05154
+			display: block
+			border-radius: 2px
+			background-image: url(../img/search-b.png)
+			background-repeat: no-repeat
+			background-position: center 25px
+			position: relative
+			&:hover
+				-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5)
+				-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5)
+				box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5)
+			&-text
+				position: absolute
+				bottom: 10px
+				color: #000
+				left: 0
+				right: 0
+				font-size: em(10px)
+				text-align: center
+				font-family: "OpenSansBold", sans-serif
+.ui-slider
+	width: 176px
+	background-color: #8c8c8c
+.ui-slider-handle
+	margin-left: -4px !important
+.products-found
+	color: #424242
+	font-size: em(13px)
+	font-family: "OpenSansRegular", sans-serif
+	&__sum
+		color: #424242
+		font-family: "OpenSansBold", sans-serif
+.sort
+	float: right
+	&__b
+		color: #424242
+		font-family: "OpenSansRegular", sans-serif
+		font-size: em(13px)
+	&__link
+		text-decoration: underline
+		color: #717171
+		font-family: "OpenSansRegular", sans-serif
+		font-size: em(13px)
+		margin-left: 9px
+		&:hover
+			color: #717171
+			text-decoration: none
+		&-active
+			color: #2e2e2e
+			font-family: "OpenSansBold", sans-serif
+			text-decoration: none
+			&:hover
+				color: #2e2e2e
+.products-menu
+	margin-left: -(22.5 * 100 / 1200) + % 
+	@extend .clearfix
+	&__title
+		width: 100%
+		text-align: center
+		color: #636363
+		font-family: "OpenSansSemiBold", sans-serif
+		font-size: em(24px)
+		margin-top: 10px
+		margin-bottom: 16px
+	&__item
+		float: left
+		+percent(222, 1200)
+		margin-left: 1.5%
+		margin-bottom: 24px
+		height: 283px
+		&-big
+			width: 38.5%
+			float: right
+			height: 590px
+			img
+				width: 315px
+			a
+				padding: 37px 22px 16px
+			.products-menu__link-row
+				position: absolute
+				bottom: 26px
+				left: 54px
+			.products-menu__link-price-old
+				font-size: em(19px)
+				font-family: "OpenSansRegular", sans-serif
+				color: #424242
+				text-decoration: line-through
+				display: inline-block
+			.products-menu__link-price
+				color: #f00
+				font-family: "OpenSansBold", sans-serif
+				font-size: em(26px)
+				margin-left: 16px
+				position: relative
+			.products-menu__link-name
+				color: #424242
+				font-family: "OpenSansRegular", sans-serif
+				font-size: em(23px)
+			.products-menu__link-price-d
+				position: absolute
+				right: -65px
+				top: 4px
+				width: 44px
+				height: 24px
+				background-color: #6ddad6
+				font-size: 14px
+				color: #fff
+				line-height: 24px
+				text-align: center
+				font-family: "OpenSansSemiBold", sans-serif
+				border-radius: 2px
+	&__link
+		width: 100%
+		height: 100%
+		display: block
+		border: 1px solid #f1f1f1
+		padding: 17px 12px 6px
+		position: relative
+		&-hit
+			&::after
+				content: ''
+				position: absolute
+				top: -5px
+				left: -5px
+				width: 58px
+				height: 60px
+				background-image: url(../img/hit.png)
+				background-repeat: no-repeat
+				background-position: center
+		&-img
+			display: block
+			width: 153px
+			margin: 0 auto
+		&-price
+			display: inline-block
+			color: #636363
+			font-family: "OpenSansSemiBold", sans-serif
+			font-size: em(20px)
+			margin-top: 12px
+		&-name
+			display: block
+			font-family: "OpenSansRegular", sans-serif
+			font-size: em(15px)
+			color: #424242
+.show-more
+	&__wrapper
+		text-align: center
+		padding-top: 24px
+	&__button
+		padding: 0 50px
+		background-color: #f16265
+		height: 50px
+		line-height: 50px
+		display: inline-block
+		border-radius: 25px
+		color: #fff
+		font-family: "OpenSansRegular", sans-serif
+		font-size: em(24px)
+		&:hover, &:focus
+			color: #fff
