@@ -20,7 +20,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
   .looking__title {
     width: 100%;
